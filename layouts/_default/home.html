@@ -1,20 +1,75 @@
 {{ define "main" }}
-<article>
-    <h1>Welcome to {{ .Site.Title }}</h1>
-    <p>{{ .Site.Params.description }}</p>
+<style>
+    .hero {
+        text-align: center;
+        padding: 4rem 2rem;
+        margin-bottom: 3rem;
+        background: linear-gradient(135deg, rgba(157, 78, 221, 0.15), rgba(138, 43, 226, 0.1));
+        border-radius: 12px;
+        border: 1px solid rgba(157, 78, 221, 0.3);
+        backdrop-filter: blur(10px);
+    }
     
-    <h2>Latest Posts</h2>
-    <ul class="posts">
-        {{ range first 10 (where .Site.RegularPages "Section" "blog") }}
-        <li>
-            <a href="{{ .Permalink }}">{{ .Title }}</a>
-            <div class="date">{{ .Date.Format "Jan 2, 2006" }}</div>
-        </li>
-        {{ end }}
-    </ul>
+    .hero h1 {
+        font-size: 3.5rem;
+        margin-bottom: 1rem;
+        background: linear-gradient(135deg, #c77dff, #e0aaff);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+    }
     
-    <p style="margin-top: 2rem;">
-        <a href="/blog/" style="text-decoration: none; color: #0066cc;">View all posts →</a>
-    </p>
-</article>
+    .hero-subtitle {
+        font-size: 1.2rem;
+        color: #b0a0d0;
+        margin-bottom: 2rem;
+        line-height: 1.8;
+    }
+    
+    .hero-cta {
+        display: inline-block;
+        padding: 0.8rem 2rem;
+        background: linear-gradient(135deg, #9d4edd, #c77dff);
+        color: #0f0f1e;
+        text-decoration: none;
+        border-radius: 6px;
+        font-weight: 600;
+        transition: all 0.3s;
+        box-shadow: 0 4px 15px rgba(157, 78, 221, 0.4);
+    }
+    
+    .hero-cta:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 6px 20px rgba(157, 78, 221, 0.6);
+    }
+    
+    .section-title {
+        font-size: 2rem;
+        color: #c77dff;
+        margin: 3rem 0 1.5rem 0;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+</style>
+
+<div class="hero">
+    <h1>{{ .Site.Title }}</h1>
+    <p class="hero-subtitle">{{ .Site.Params.description }}</p>
+    <p class="hero-subtitle">A collection of poems, thoughts, and reflections. A space for the heart to speak.</p>
+    <a href="/blog/" class="hero-cta">Explore Posts</a>
+</div>
+
+<h2 class="section-title">Latest Poetry</h2>
+<ul class="posts">
+    {{ range first 6 (where .Site.RegularPages "Section" "blog") }}
+    <li>
+        <a href="{{ .Permalink }}">{{ .Title }}</a>
+        <div class="date">{{ .Date.Format "Jan 2, 2006" }}</div>
+    </li>
+    {{ end }}
+</ul>
+
+<div style="text-align: center; margin-top: 3rem; margin-bottom: 2rem;">
+    <a href="/blog/" style="text-decoration: none; color: #c77dff; font-size: 1rem; font-weight: 600; transition: all 0.3s;" onmouseover="this.style.color='#e0aaff'; this.style.textShadow='0 0 10px rgba(192, 125, 255, 0.5)'" onmouseout="this.style.color='#c77dff'; this.style.textShadow='none'">View all posts →</a>
+</div>
 {{ end }}

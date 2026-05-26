@@ -1,11 +1,11 @@
 baseURL = "https://katkonnecting.github.io/"
 languageCode = "en-us"
-title = "KatKonnecting"
+title = "TheKonnecting"
 paginate = 10
 
 [params]
-  author = "KatKonnecting"
-  description = "Blogs and Writeups"
+  author = "Aish.kat"
+  description = "Poetry, emotions, and reflections in the dark."
   
 [outputs]
   home = ["HTML", "RSS", "JSON"]
