@@ -4,12 +4,13 @@ title: "About"
 
 # About Me
 
-Add your bio and information here. Edit `content/about/_index.md` to update this page.
+2 am thoughts run my page 🐱  
+A space where I share fragments, reflections, and write-ups.
 
 ## Experience
 
-- Your background
-- Your skills
-- Your interests
+- Exploring ideas through late-night musings
+- Writing as a way to connect and reflect
+- Interests that wander between creativity and everyday life
 
-Feel free to customize this page with your own content.
+Feel free to follow along as I continue shaping this page with my thoughts and stories.
