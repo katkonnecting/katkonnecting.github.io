@@ -1,0 +1,30 @@
+baseURL = "https://katkonnecting.github.io/"
+languageCode = "en-us"
+title = "KatKonnecting"
+theme = "minimal"
+paginate = 10
+
+[params]
+  author = "KatKonnecting"
+  description = "Blogs and Writeups"
+  
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
+[menu]
+  [[menu.main]]
+    name = "Home"
+    url = "/"
+    weight = 1
+  [[menu.main]]
+    name = "Blog"
+    url = "/blog/"
+    weight = 2
+  [[menu.main]]
+    name = "About"
+    url = "/about/"
+    weight = 3
+  [[menu.main]]
+    name = "RSS"
+    url = "/index.xml"
+    weight = 4

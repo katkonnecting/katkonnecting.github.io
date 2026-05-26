@@ -1,0 +1,7 @@
+public/
+resources/
+.DS_Store
+*.swp
+*.swo
+*~
+.vscode/settings.json
