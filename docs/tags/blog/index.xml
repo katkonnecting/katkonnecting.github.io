@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Blog on TheKonnecting</title><link>https://katkonnecting.github.io/tags/blog/</link><description>Recent content in Blog on TheKonnecting</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Tue, 26 May 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://katkonnecting.github.io/tags/blog/index.xml" rel="self" type="application/rss+xml"/><item><title>Welcome to KatKonnecting</title><link>https://katkonnecting.github.io/blog/first-post/</link><pubDate>Tue, 26 May 2026 00:00:00 +0000</pubDate><guid>https://katkonnecting.github.io/blog/first-post/</guid><description>&lt;h1 id="welcome"&gt;Welcome!&lt;/h1&gt;
+&lt;p&gt;This is your first blog post. Here&amp;rsquo;s what you can do:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Edit this file in &lt;code&gt;content/blog/first-post.md&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Add more posts in the same directory&lt;/li&gt;
+&lt;li&gt;Use Markdown formatting&lt;/li&gt;
+&lt;li&gt;Add tags and dates&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;To create a new post, use:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;hugo new blog/post-name.md
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id="next-steps"&gt;Next Steps&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Push to GitHub&lt;/li&gt;
+&lt;li&gt;GitHub Actions will automatically build and deploy&lt;/li&gt;
+&lt;li&gt;Your site will be live at &lt;code&gt;https://katkonnecting.github.io&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Happy writing!&lt;/p&gt;</description></item></channel></rss>
