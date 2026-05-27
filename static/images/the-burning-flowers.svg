@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 760" role="img" aria-labelledby="title desc">
+  <title id="title">Burning flowers</title>
+  <desc id="desc">A lined-paper inspired image of blue flowers with smoke.</desc>
+  <defs>
+    <linearGradient id="paper" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0" stop-color="#eee4cd"/>
+      <stop offset="1" stop-color="#c6b99d"/>
+    </linearGradient>
+    <linearGradient id="flame" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#fff0a3"/>
+      <stop offset=".42" stop-color="#e96a40"/>
+      <stop offset="1" stop-color="#35356f"/>
+    </linearGradient>
+  </defs>
+  <rect width="1400" height="760" fill="url(#paper)"/>
+  <g opacity=".42" stroke="#7d776b" stroke-dasharray="8 12" stroke-width="2">
+    <path d="M0 92H1400M0 168H1400M0 244H1400M0 320H1400M0 396H1400M0 472H1400M0 548H1400M0 624H1400M0 700H1400"/>
+  </g>
+  <g transform="translate(720 418)" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M-265 230c88-170 142-270 178-430M-38 238C-70 92-60-38 14-202M170 224c-14-150 8-268 92-384" stroke="#31406f" stroke-width="16" opacity=".78"/>
+    <g fill="#5867a4" stroke="#27335d" stroke-width="8">
+      <ellipse cx="-92" cy="-220" rx="54" ry="122" transform="rotate(-42 -92 -220)"/>
+      <ellipse cx="-154" cy="-204" rx="54" ry="122" transform="rotate(34 -154 -204)"/>
+      <ellipse cx="-118" cy="-270" rx="46" ry="104" transform="rotate(4 -118 -270)"/>
+      <circle cx="-126" cy="-220" r="35" fill="#24294e"/>
+      <ellipse cx="28" cy="-222" rx="50" ry="112" transform="rotate(-34 28 -222)"/>
+      <ellipse cx="100" cy="-210" rx="50" ry="112" transform="rotate(38 100 -210)"/>
+      <circle cx="64" cy="-220" r="31" fill="#24294e"/>
+      <ellipse cx="256" cy="-178" rx="52" ry="116" transform="rotate(-28 256 -178)"/>
+      <ellipse cx="320" cy="-160" rx="52" ry="116" transform="rotate(42 320 -160)"/>
+      <circle cx="288" cy="-170" r="32" fill="#24294e"/>
+    </g>
+    <path d="M-190-356c-50-82 12-142-18-214 92 76 116 142 66 214M38-356c-36-84 42-136 14-204 84 76 92 140 36 204M266-316c-30-76 48-116 34-176 70 66 76 116 28 176" fill="url(#flame)" opacity=".86"/>
+  </g>
+  <g fill="none" stroke="#5b607c" stroke-linecap="round" opacity=".32">
+    <path d="M510 132c-72-56 72-96 0-158" stroke-width="14"/>
+    <path d="M750 126c-76-68 68-116-4-178" stroke-width="12"/>
+    <path d="M992 164c-64-52 58-92-8-142" stroke-width="12"/>
+  </g>
+</svg>

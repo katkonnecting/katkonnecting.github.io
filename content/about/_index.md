@@ -2,7 +2,7 @@
 title: "About"
 ---
 
-# About Me
+## About Me
 
 2 am thoughts run my page 🐱  
 A space where I share fragments, reflections, and write-ups.

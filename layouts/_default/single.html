@@ -11,6 +11,12 @@
         </div>
         {{ end }}
     </div>
+
+    {{ with .Params.featured_image }}
+    <figure class="post-visual">
+        <img src="{{ . }}" alt="{{ $.Params.featured_alt | default $.Title }}">
+    </figure>
+    {{ end }}
     
     {{ .Content }}
 </article>

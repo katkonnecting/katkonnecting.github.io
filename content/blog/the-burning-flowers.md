@@ -2,6 +2,8 @@
 title: "The Burning Flowers"
 date: 2026-02-01
 tags: ["poetry", "emotions"]
+featured_image: "/images/the-burning-flowers.svg"
+featured_alt: "A smoking blue flower illustration on lined paper"
 ---
 
 You're burning in heart

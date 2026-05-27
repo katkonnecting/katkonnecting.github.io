@@ -1,5 +1,9 @@
 public/
 resources/
+.tools/
+.hugo_build.lock
+.hugo-server*.log
+.hugo-server*.err
 .DS_Store
 *.swp
 *.swo

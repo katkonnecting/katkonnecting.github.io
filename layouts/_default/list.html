@@ -1,14 +1,24 @@
 {{ define "main" }}
 <article>
     <h1>{{ .Title }}</h1>
+
+    {{ .Content }}
     
+    {{ if .Pages }}
     <ul class="posts">
         {{ range .Pages }}
+        {{ $post := . }}
         <li>
+            {{ with .Params.featured_image }}
+            <a class="post-thumb" href="{{ $post.Permalink }}" aria-hidden="true" tabindex="-1">
+                <img src="{{ . }}" alt="">
+            </a>
+            {{ end }}
             <a href="{{ .Permalink }}">{{ .Title }}</a>
             <div class="date">{{ .Date.Format "Jan 2, 2006" }}</div>
         </li>
         {{ end }}
     </ul>
+    {{ end }}
 </article>
 {{ end }}

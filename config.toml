@@ -1,14 +1,16 @@
 baseURL = "https://katkonnecting.github.io/"
-languageCode = "en-us"
+locale = "en-US"
 title = "TheKonnecting"
-paginate = 10
 
 [params]
   author = "Aish.kat"
   description = "Poetry, emotions, and reflections in the dark."
   
 [outputs]
-  home = ["HTML", "RSS", "JSON"]
+  home = ["HTML", "RSS"]
+
+[pagination]
+  pagerSize = 10
 
 [menu]
   [[menu.main]]

@@ -50,6 +50,38 @@
         text-transform: uppercase;
         letter-spacing: 1px;
     }
+
+    .view-all {
+        margin: 3rem 0 2rem;
+        text-align: center;
+    }
+
+    .view-all a {
+        color: #c77dff;
+        font-size: 1rem;
+        font-weight: 600;
+        text-decoration: none;
+        transition: color 0.3s, text-shadow 0.3s;
+    }
+
+    .view-all a:hover {
+        color: #e0aaff;
+        text-shadow: 0 0 10px rgba(192, 125, 255, 0.5);
+    }
+
+    @media (max-width: 640px) {
+        .hero {
+            padding: 3rem 1.25rem;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+        }
+
+        .section-title {
+            font-size: 1.5rem;
+        }
+    }
 </style>
 
 <div class="hero">
@@ -62,14 +94,20 @@
 <h2 class="section-title">Latest Write-ups</h2>
 <ul class="posts">
     {{ range first 6 (where .Site.RegularPages "Section" "blog") }}
+    {{ $post := . }}
     <li>
+        {{ with .Params.featured_image }}
+        <a class="post-thumb" href="{{ $post.Permalink }}" aria-hidden="true" tabindex="-1">
+            <img src="{{ . }}" alt="">
+        </a>
+        {{ end }}
         <a href="{{ .Permalink }}">{{ .Title }}</a>
         <div class="date">{{ .Date.Format "Jan 2, 2006" }}</div>
     </li>
     {{ end }}
 </ul>
 
-<div style="text-align: center; margin-top: 3rem; margin-bottom: 2rem;">
-    <a href="/blog/" style="text-decoration: none; color: #c77dff; font-size: 1rem; font-weight: 600; transition: all 0.3s;" onmouseover="this.style.color='#e0aaff'; this.style.textShadow='0 0 10px rgba(192, 125, 255, 0.5)'" onmouseout="this.style.color='#c77dff'; this.style.textShadow='none'">View all posts →</a>
+<div class="view-all">
+    <a href="/blog/">View all posts →</a>
 </div>
 {{ end }}

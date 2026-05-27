@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 760" role="img" aria-labelledby="title desc">
+  <title id="title">Glowing flower</title>
+  <desc id="desc">A luminous flower over a warm dark background for the poem I Light Up Your Days.</desc>
+  <defs>
+    <radialGradient id="glow" cx="66%" cy="38%" r="54%">
+      <stop offset="0" stop-color="#fff4b8" stop-opacity=".9"/>
+      <stop offset=".34" stop-color="#c77dff" stop-opacity=".34"/>
+      <stop offset=".72" stop-color="#1a0f2e" stop-opacity=".82"/>
+      <stop offset="1" stop-color="#0f0f1e"/>
+    </radialGradient>
+    <linearGradient id="petal" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#fff7c8"/>
+      <stop offset=".45" stop-color="#f7b267"/>
+      <stop offset="1" stop-color="#9d4edd"/>
+    </linearGradient>
+    <filter id="soft">
+      <feGaussianBlur stdDeviation="7"/>
+    </filter>
+  </defs>
+  <rect width="1400" height="760" fill="url(#glow)"/>
+  <path d="M0 560c210-90 382-106 568-38 178 65 330 63 482 18 134-40 236-28 350 39v181H0Z" fill="#0b1426" opacity=".72"/>
+  <g transform="translate(855 362)">
+    <circle r="168" fill="#e0aaff" opacity=".16" filter="url(#soft)"/>
+    <g fill="url(#petal)" opacity=".94">
+      <ellipse rx="56" ry="158" transform="rotate(0) translate(0 -126)"/>
+      <ellipse rx="56" ry="158" transform="rotate(45) translate(0 -126)"/>
+      <ellipse rx="56" ry="158" transform="rotate(90) translate(0 -126)"/>
+      <ellipse rx="56" ry="158" transform="rotate(135) translate(0 -126)"/>
+      <ellipse rx="56" ry="158" transform="rotate(180) translate(0 -126)"/>
+      <ellipse rx="56" ry="158" transform="rotate(225) translate(0 -126)"/>
+      <ellipse rx="56" ry="158" transform="rotate(270) translate(0 -126)"/>
+      <ellipse rx="56" ry="158" transform="rotate(315) translate(0 -126)"/>
+    </g>
+    <circle r="62" fill="#fff2a8"/>
+    <circle r="34" fill="#2b163f" opacity=".78"/>
+    <path d="M-14 72c-18 132-44 246-122 338" fill="none" stroke="#77d68f" stroke-width="18" stroke-linecap="round"/>
+    <path d="M-76 244c-118-24-206 6-281 95 128 28 219-9 281-95Z" fill="#77d68f" opacity=".72"/>
+  </g>
+  <g fill="#fff4b8" opacity=".55">
+    <circle cx="260" cy="180" r="3"/>
+    <circle cx="344" cy="236" r="2"/>
+    <circle cx="460" cy="146" r="2.5"/>
+    <circle cx="1168" cy="162" r="3"/>
+    <circle cx="1230" cy="256" r="2"/>
+  </g>
+</svg>

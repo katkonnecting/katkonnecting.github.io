@@ -24,9 +24,10 @@ jobs:
           extended: true
           
       - name: Build
-        run: hugo --destination docs --minify
+        run: hugo --destination docs --minify --cleanDestinationDir
       
       - name: Commit and Push
+        if: github.event_name == 'push'
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
