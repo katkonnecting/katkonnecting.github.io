@@ -25,7 +25,3 @@ title = "TheKonnecting"
     name = "About"
     url = "/about/"
     weight = 3
-  [[menu.main]]
-    name = "RSS"
-    url = "/index.xml"
-    weight = 4
